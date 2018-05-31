@@ -1,0 +1,42 @@
+<div ng-include="'header.html'"></div>
+
+
+<div ng-controller="kullanicisil">
+
+<div class="container">
+	<div class="row">
+		<form name="form5" role="form" class="contact-form" onsubmit="return KullaniciSilKontrol()">
+                    <div class="row">
+                		<div class="col-md-6">
+                  		<div class="form-group">
+                            <input type="text" class="form-control" name="userId"  placeholder="Silinecek Kullanıcı Id">
+                  		</div>
+                  	</div>
+
+                  	</div>
+
+                    <div class="row">
+                    <div class="col-md-6">
+                  <button type="submit" value="gonder" class="btn main-btn pull-right">Kullanıcı Sil</button>
+                  </div>
+                  </div>
+                </form>
+	</div>
+</div>
+<script type="text/javascript">
+function KullaniciSilKontrol() {
+var userId=document.forms['form5'][0].value;
+
+if (userId==null ||userId=="")
+ {
+  alert("Id kısmı boş bırakılamaz");
+  return false;
+}
+else
+{
+  alert("Başarılı");
+}
+
+}
+</script>
+<div ng-include="'footer.html'"></div>

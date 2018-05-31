@@ -1,0 +1,62 @@
+<div class="container ">
+  
+  <div class="row" id="slider">
+    <div class="col-md-12">
+      <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="active item" data-slide-number="0">
+            <img src="img/portugal.png">
+          </div>
+          <div  ng-repeat="resim in resimler" class=" item" data-slide-number="{{$index+1}}">
+            <img src={{resim.resimYol}}>
+          </div>
+
+        </div>
+        
+        <!-- Controls-->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-12" id="slider-thumbs">
+      <ul class="list-inline">
+        <li>
+          <a id="carousel-thumb-0" class="selected">
+            <img src="http://placehold.it/80x60&text=1">
+          </a>
+        </li>
+        <li>
+          <a id="carousel-thumb-1">
+            <img src="http://placehold.it/80x60&text=2">
+          </a>
+        </li>
+        <li>
+          <a id="carousel-thumb-2">
+            <img src="http://placehold.it/80x60&text=3">
+          </a>
+        </li>
+        <li>
+          <a id="carousel-thumb-3">
+            <img src="http://placehold.it/80x60&text=4">
+          </a>
+        </li>
+        <li>
+          <a id="carousel-thumb-4">
+            <img src="http://placehold.it/80x60&text=5">
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>

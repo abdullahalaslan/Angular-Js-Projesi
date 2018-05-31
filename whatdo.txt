@@ -1,0 +1,10 @@
+[
+{
+"baslik" : "Art and Culture",
+"aciklama" : "It was many years ago came to Angel and Di Maria"
+},
+{
+"baslik" : "Sun and Beach",
+"aciklama" : "Since he discovered beaches of the Costa Vicentina"
+}
+] 

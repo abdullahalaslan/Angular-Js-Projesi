@@ -1,0 +1,39 @@
+
+<div ng-include="'header.html'"></div>
+
+<div ng-controller="kullanicilistele">
+<br>
+  <div class="col-md-6">
+    <input type="text" class="form-control" ng-model="arama.userName"  placeholder="İsme Göre Ara">
+    <br>
+     <input type="text"class="form-control"  ng-model="arama.userPassword"  placeholder="Şifreye Göre Ara">
+                
+  </div>
+  <div class="col-md-6">
+<button type="button" class="btn btn-danger" ng-click="idsirala()">idye Göre Sırala</button>
+ <button type="button" class="btn btn-danger" ng-click="nameSirala()">İsme Göre Sırala</button>
+ <button type="button" class="btn btn-danger" ng-click="passwordSirala()">Şifreye Göre Sırala</button>
+ </div>
+<div class="col-md-12">
+<table style="margin-top:30px;margin-right:50px;" border=5>
+<thead>
+<tr>
+<th>ID</th>
+<th>Kullanıcı Adı</th>
+<th>Şifre</th>
+
+</tr>
+</thead>
+<tbody>
+<tr ng-repeat="kullanici in kullanicilar|orderBy:sirala|filter:arama" >
+<td> {{ kullanici.userId  }} </td>
+<td> {{ kullanici.userName }} </td>
+<td> {{ kullanici.userPassword }} </td>
+
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div ng-include="'footer.html'"></div>

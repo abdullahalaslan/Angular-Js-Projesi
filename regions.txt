@@ -1,0 +1,10 @@
+[
+{
+"baslik" : "Porto",
+"aciklama" : "On a brief visit to Porto, there are some places that cannot be missed. In the words of many visitors, this city has something mystical that is difficult to describe and which varies according to the place, time of day and light.Whatever it is, "
+},
+{
+"baslik" : "Lisboa",
+"aciklama" : "Lisbon is a cosmopolitan city, with good access and a few hours away from any European capital.And there is so much to see and do that it is difficult to have enough time to see everything you want at your leisure... Here we present a selection of"
+}
+] 

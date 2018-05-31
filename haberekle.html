@@ -1,0 +1,50 @@
+<div ng-include="'header.html'"></div>
+
+
+<div ng-controller="haberekle">
+
+<div class="container">
+	<div class="row">
+		<form name="form2" role="form" class="contact-form" onsubmit="return HaberEkleKontrol()">
+                    <div class="row">
+                		<div class="col-md-6">
+                  		<div class="form-group">
+                            <input type="text" class="form-control"  name="HaberId"  id="Name" placeholder="id">
+                  		</div>
+                  	</div>
+                    	<div class="col-md-6">
+                  		<div class="form-group">
+                            <input text="text" class="form-control" name="Baslik" id="baslik" placeholder="Başlık">
+                  		</div>
+                  	</div>
+                  	</div>
+                  	<div class="row">
+                  		<div class="col-md-12">
+                  		<div class="form-group">
+                            <textarea class="form-control textarea" rows="3" name="Message" id="Message" placeholder="Message"></textarea>
+                  		</div>
+                  	</div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-12">
+                  <button type="submit" value="gonder" class="btn main-btn pull-right">Haber Ekle</button>
+                  </div>
+                  </div>
+                </form>
+	</div>
+</div>
+<script type="text/javascript">
+function HaberEkleKontrol() {
+var haberId=document.forms['form2'][0].value;
+if (haberId==null ||haberId=="")
+{
+  alert("Id kısmı boş bırakılamaz");
+  return false;
+}
+else
+{
+  alert("Başarılı");
+}
+}
+</script>
+<div ng-include="'footer.html'"></div>

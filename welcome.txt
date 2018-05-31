@@ -1,0 +1,17 @@
+[
+{
+"resimYol" : "img/portugal1.jpg",
+"aciklama" : "Viana do Castelo",
+"kisaAciklama" : "Amazing"
+},
+ {
+"resimYol" : "img/portugal2.jpg",
+"aciklama" : "Braga",
+"kisaAciklama" : "Incredible"
+},
+{
+"resimYol" : "img/portugal3.jpg",
+"aciklama" : "Portalegre",
+"kisaAciklama" : "Wonderful"
+}
+] 

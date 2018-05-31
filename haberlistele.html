@@ -1,0 +1,36 @@
+
+<div ng-include="'header.html'"></div>
+
+<div ng-controller="haberlistele">
+<br>
+  <div class="col-md-6">
+    <input type="text" class="form-control"  ng-model="arama.haberBaslik"  placeholder="Başlığa Göre Ara">
+    <br>
+     <input type="text" class="form-control"  ng-model="arama.haberIcerik"  placeholder="İçeriğe Göre Ara">       
+  </div>
+<div class="col-md-6">
+<button type="button" class="btn btn-danger" ng-click="idsirala()">ID'ye Göre Sırala</button>
+ <button type="button"class="btn btn-danger"  ng-click="basliksirala()">Başlığa Göre Sırala</button>
+ <button type="button"class="btn btn-danger"  ng-click="iceriksirala()">İçeriğe Göre Sırala</button>
+</div>
+<div class="col-md-12">
+<table style="margin-top:30px;margin-right:50px;" border=5>
+<thead>
+<tr>
+<th>ID</th>
+<th>BAŞLIK</th>
+<th>İÇERİK</th>
+</tr>
+</thead>
+<tbody>
+<tr ng-repeat="haber in haberler|orderBy:sirala|filter:arama" >
+<td> {{ haber.haberId  }} </td>
+<td> {{ haber.haberBaslik }} </td>
+<td> {{ haber.haberIcerik }} </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div ng-include="'footer.html'"></div>

@@ -1,0 +1,22 @@
+[
+{
+"haberId" : "1",
+"haberBaslik" : "Eurovision Village opens today in Lisbon",
+"haberIcerik" : "As Portugal gears up to host one of the largest events ever staged in the country, Eurovision Village will open its gates to the public later tonight at 7.30pm. The venue, in Terreiro do Paço, will be one of the main backdrops for the Eurovision Festival, and includes street food vendors, a chill out area, and activities relating to the main event."
+},
+{
+"haberId" : "2",
+"haberBaslik" : "Portuguese family rescued from yacht stranded off coast of Somalia",
+"haberIcerik" : "The Azorean husband and wife and their two children aged 5 and 8 were sailing the world when their fuel ran about 250 kilometres off the Somalia coast.They spent several hours drifting before being helped by a Pakistani navy ship, which gave them fuel and food so they could continue their journey."
+},
+{
+"haberId" : "3",
+"haberBaslik" : "Portimaos new bus terminal up and running",
+"haberIcerik" : "As of Tuesday long-distance coaches no longer pick passengers up from the city’s riverside area, eliminating the need to drive through the city centre.Around 60 fewer coaches now pass through the city every day, reducing pollution and easing traffic flow."
+},
+{
+"haberId" : "4",
+"haberBaslik" : "5.2m housing protocol approved by Faro council for Island community",
+"haberIcerik" : "A total of 94 families, predominantly fishermen, whose dwellings have been deemed illegal, will be relocated elsewhere.The protocol now needs to be approved in a Municipal Assembly."
+}
+] 

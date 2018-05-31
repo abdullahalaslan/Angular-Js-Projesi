@@ -1,0 +1,54 @@
+<div ng-include="'header.html'"></div>
+
+
+<div ng-controller="kullaniciduzenle">
+
+<div class="container">
+	<div class="row">
+		<form name="form6" role="form" class="contact-form" onsubmit="return KullaniciDuzenleKontrol()">
+                    <div class="row">
+                		<div class="col-md-4">
+                  		<div class="form-group">
+                            <input type="text" class="form-control"  name="userId"  id="Id" placeholder="Düzenlenecek Kullanıcı id">
+                  		</div>
+                  	</div>
+                    	<div class="col-md-4">
+                  		<div class="form-group">
+                            <input text="text" class="form-control" name="userName" id="userName" placeholder="Kullanıcı Adı">
+                  		</div>
+                  	</div>
+					<div class="col-md-4">
+                  		<div class="form-group">
+                            <input text="text" class="form-control" name="userPassword" id="userPassword" placeholder="Kullanıcı Şifresi">
+                  		</div>
+                  	</div>
+                  	</div>
+                  
+                    <div class="row">
+                    <div class="col-md-12">
+                  <button type="submit" value="gonder" class="btn main-btn pull-right">Kullanıcı Düzenle</button>
+                  </div>
+                  </div>
+                </form>
+	</div>
+</div>
+<script type="text/javascript">
+function KullaniciDuzenleKontrol() {
+var userId=document.forms['form6'][0].value;
+var userName=document.forms['form6'][1].value;
+var userPassword=document.forms['form6'][2].value;
+
+if (userId==null ||userId=="" ||userName==null ||userName==""||userPassword==null ||userPassword=="")
+{
+  alert("Alanlar boş bırakılamaz");
+  return false;
+}
+
+else
+{
+  alert("Başarılı");
+}
+
+}
+</script>
+<div ng-include="'footer.html'"></div>

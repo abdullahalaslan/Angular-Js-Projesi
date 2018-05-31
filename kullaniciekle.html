@@ -1,0 +1,52 @@
+<div ng-include="'header.html'"></div>
+
+
+<div ng-controller="kullaniciekle">
+
+<div class="container">
+	<div class="row">
+		<form name="form4" role="form" class="contact-form" onsubmit="return KullaniciEkleKontrol()">
+                    <div class="row">
+                		<div class="col-md-6">
+                  		<div class="form-group">
+                            <input type="text" class="form-control"  name="userId"  id="userId" placeholder="Kullanıcı Id">
+                  		</div>
+						<div class="form-group">
+                            <input type="text" class="form-control"  name="userName"  id="Name" placeholder="Kullanıcı Adı">
+                  		</div>
+                  	</div>
+                    	<div class="col-md-6">
+                  		<div class="form-group">
+                            <input text="text" class="form-control" name="userPassword" id="Password" placeholder="Şifre">
+                  		</div>
+                  	</div>
+                  	</div>
+                  	
+                    <div class="row">
+                    <div class="col-md-12">
+                  <button type="submit" value="gonder" class="btn main-btn pull-right">Kullanıcı Ekle</button>
+                  </div>
+                  </div>
+                </form>
+	</div>
+</div>
+<script type="text/javascript">
+function KullaniciEkleKontrol() {
+var userId=document.forms['form4'][0].value;
+var userName=document.forms['form4'][1].value;
+var userPassword=document.forms['form4'][2].value;
+
+if (userId==null ||userId=="" ||userName==null ||userName==""||userPassword==null ||userPassword=="")
+{
+  alert("Alanlar boş bırakılamaz");
+  return false;
+}
+
+else
+{
+  alert("Başarılı");
+}
+
+}
+</script>
+<div ng-include="'footer.html'"></div>

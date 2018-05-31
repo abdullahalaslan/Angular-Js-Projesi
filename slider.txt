@@ -1,0 +1,15 @@
+[
+{
+"resimYol" : "img/portugal4.jpg"
+},
+ {
+"resimYol" : "img/portugal5.jpg"
+},
+{
+"resimYol" : "img/portugal6.jpg"
+},
+{
+"resimYol" : "img/portugal6.jpg"
+}
+
+] 
